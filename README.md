@@ -30,13 +30,13 @@ Inspired by real-world systems like:
 ## Screenshots
 
 ### Dashboard
-![Dashboard](screenshots/dashboard.png)
+<img src="./screenshots/dashboard.png" width="100%">
 
 ### Cache Nodes Visualization
-![Cache Nodes](screenshots/cachenodes.png)
+<img src="./screenshots/cachenodes.png" width="100%">
 
 ### Cache Controls & Operations
-![Cache Controls](screenshots/cachecontrols.png)
+<img src="./screenshots/cachecontrols.png" width="100%">
 
 # Tech Stack
 
