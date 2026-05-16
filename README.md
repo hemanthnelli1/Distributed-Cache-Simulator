@@ -35,6 +35,7 @@ Inspired by real-world systems like:
 
 ### Cache Controls & Operations
 <img src="./screenshots/cachecontrols.png" width="100%">
+
 ### Cache Nodes Visualization
 <img src="./screenshots/cachenodes.png" width="100%">
 
