@@ -27,6 +27,16 @@ Inspired by real-world systems like:
 * Distributed in-memory caching engines
 
 ---
+## Screenshots
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Cache Nodes Visualization
+![Cache Nodes](screenshots/cachenodes.png)
+
+### Cache Controls & Operations
+![Cache Controls](screenshots/cachecontrols.png)
 
 # Tech Stack
 
