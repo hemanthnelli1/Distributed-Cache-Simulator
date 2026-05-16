@@ -548,7 +548,7 @@ export default function App() {
 
   const insertData = async () => {
     try {
-      await fetch(`http://127.0.0.1:8000/put?key=${keyInput}&value=${valueInput}`, { method: "POST" });
+      await fetch(`https://distributed-cache-simulator.onrender.com/put?key=${keyInput}&value=${valueInput}`, { method: "POST" });
       showMessage("Data inserted successfully");
       setKeyInput(""); setValueInput("");
       fetchMetrics(); fetchCacheState();
@@ -557,7 +557,7 @@ export default function App() {
 
   const getData = async () => {
     try {
-      const response = await fetch(`http://127.0.0.1:8000/get/${searchKey}`);
+      const response = await fetch(`https://distributed-cache-simulator.onrender.com/${searchKey}`);
       const data = await response.json();
       showMessage(data.value !== undefined ? `Value: ${data.value}` : "Key not found");
       fetchMetrics(); fetchCacheState();
@@ -566,7 +566,7 @@ export default function App() {
 
   const deleteData = async () => {
     try {
-      const response = await fetch(`http://127.0.0.1:8000/delete/${searchKey}`, { method: "DELETE" });
+      const response = await fetch(`https://distributed-cache-simulator.onrender.com/delete/${searchKey}`, { method: "DELETE" });
       const data = await response.json();
       showMessage(data.message || "Deleted");
       fetchMetrics(); fetchCacheState();
@@ -577,7 +577,7 @@ export default function App() {
   try {
 
     const response = await fetch(
-      "http://127.0.0.1:8000/clear",
+      "https://distributed-cache-simulator.onrender.com/clear",
       {
         method: "DELETE",
       }
@@ -598,14 +598,14 @@ export default function App() {
 
   const fetchMetrics = async () => {
     try {
-      const r = await fetch("http://127.0.0.1:8000/metrics");
+      const r = await fetch("https://distributed-cache-simulator.onrender.com/metrics");
       setMetrics(await r.json());
     } catch {}
   };
 
   const fetchCacheState = async () => {
     try {
-      const r = await fetch("http://127.0.0.1:8000/cache-state");
+      const r = await fetch("https://distributed-cache-simulator.onrender.com/cache-state");
       setCacheState(await r.json());
     } catch {}
   };
